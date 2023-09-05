@@ -23,36 +23,20 @@
 // }
 
 // export default App;
-// import "./App.css";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <div class="alert alert-primary" role="alert">
-//           <p style={{ display: "none" }} className="d-block">
-//             Bootstrap is now successfully installed 😃
-//           </p>
-//           <p className="d-none">
-//             Bootstrap is not installed if you can see this 😢
-//           </p>
-//         </div>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import BurgerContainer from "./BurgerContainer";
 
 function App() {
+  const [searchInput, setSearchInput] = useState("");
   return (
     <div>
       <h1 className="Header">Bob's Burgers of the Day</h1>
-      <BurgerContainer />
+      <BurgerContainer
+        searchInput={searchInput}
+        setSearchInput={setSearchInput}
+      />
     </div>
   );
 }
