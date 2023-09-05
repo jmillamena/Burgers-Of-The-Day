@@ -23,7 +23,7 @@
 // }
 
 // export default App;
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import React, { useState } from "react";
 import BurgerContainer from "./BurgerContainer";
