@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "./Search";
 import AddBurgerForm from "./AddBurgerForm";
 import BurgerList from "./BurgerList";
 
-function BurgerContainer() {
+function BurgerContainer({ searchInput, setSearchInput }) {
   return;
   <div>
-    <Search />
+    <Search searchInput={searchInput} setSearchInput={setSearchInput} />
     <AddBurgerForm />
     <BurgerList />
   </div>;
