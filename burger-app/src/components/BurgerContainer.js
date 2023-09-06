@@ -7,7 +7,7 @@ function BurgerContainer({ searchInput, setSearchInput }) {
   const [burgers, setBurger] = useState([]);
 
   const addBurger = (burger) => {
-    fetch("http://localhost:3000/burgers", {
+    fetch("http://localhost:3001/burgers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +21,7 @@ function BurgerContainer({ searchInput, setSearchInput }) {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/burgers")
+    fetch("http://localhost:3001/burgers")
       .then((res) => res.json())
       .then(setBurger);
   }, []);
