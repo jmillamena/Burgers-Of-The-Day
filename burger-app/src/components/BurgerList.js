@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Burgers from "./Burgers";
 
-function BurgerList() {
+function BurgerList({ burgers }) {
   // const burger = {
   //   id: 1,
   //   date: "2/22/2015",
@@ -10,13 +10,6 @@ function BurgerList() {
   //   image: "https://i.ibb.co/KVzjMFf/Screenshot-2023-09-01-at-11-31-40-AM.png",
   //   price: 6.75,
   // };
-  const [burgers, setBurgers] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3001/burgers")
-      .then((r) => r.json())
-      .then((burgers) => setBurgers(burgers));
-  }, []);
 
   const burgerCards = burgers.map((burger) => {
     return (
@@ -26,9 +19,9 @@ function BurgerList() {
         date={burger.date}
         image={burger.image}
         price={burger.price}
-        ingredientsList={burger.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
-        ))}
+        // ingredientsList={burger.ingredients.map((ingredient, index) => (
+        //   <li key={index}>{ingredient}</li>
+        // ))}
       />
     );
   });
