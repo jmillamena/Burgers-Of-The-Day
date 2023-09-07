@@ -42,8 +42,8 @@ function BurgerContainer({ searchInput, setSearchInput }) {
   return (
     <div>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-      <AddBurgerForm addBurger={addBurger} />
       <BurgerList burgers={burgers} searchInput={searchInput} />
+      <AddBurgerForm addBurger={addBurger} />
     </div>
   );
 }
