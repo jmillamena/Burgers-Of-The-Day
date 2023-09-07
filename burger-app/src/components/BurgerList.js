@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Burgers from "./Burgers";
 
 function BurgerList({ burgers, searchInput }) {
@@ -7,6 +7,12 @@ function BurgerList({ burgers, searchInput }) {
   });
 
   const burgerCards = filteredBurgers.map((burger) => {
+    const ingredientsList =
+      Array.isArray(burger.ingredients) &&
+      burger.ingredients.map((ingredient, index) => (
+        <li key={index}>{ingredient}</li>
+      ));
+
     return (
       <Burgers
         key={burger.id}
@@ -14,12 +20,11 @@ function BurgerList({ burgers, searchInput }) {
         date={burger.date}
         image={burger.image}
         price={burger.price}
-        // ingredientsList={burger.ingredients.map((ingredient, index) => (
-        //   <li key={index}>{ingredient}</li>
-        // ))}
+        ingredientsList={ingredientsList}
       />
     );
   });
+
   return <ul className="cards">{burgerCards}</ul>;
 }
 
