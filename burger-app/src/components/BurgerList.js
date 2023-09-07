@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Burgers from "./Burgers";
 
-function BurgerList({ burgers }) {
-  // const burger = {
-  //   id: 1,
-  //   date: "2/22/2015",
-  //   name: "Itsy Bitsy Teeny Weenie Yellow Polka-Dot Zucchini Burger",
-  //   ingredients: ["Yogurt Sauce", "Zucchini", "Beef Patty"],
-  //   image: "https://i.ibb.co/KVzjMFf/Screenshot-2023-09-01-at-11-31-40-AM.png",
-  //   price: 6.75,
-  // };
+function BurgerList({ burgers, searchInput }) {
+  const filteredBurgers = burgers.filter((burger) => {
+    return burger.name.toLowerCase().includes(searchInput.toLowerCase());
+  });
 
-  const burgerCards = burgers.map((burger) => {
+  const burgerCards = filteredBurgers.map((burger) => {
     return (
       <Burgers
         key={burger.id}

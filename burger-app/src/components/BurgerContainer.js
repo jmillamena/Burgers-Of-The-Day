@@ -43,7 +43,7 @@ function BurgerContainer({ searchInput, setSearchInput }) {
     <div>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
       <AddBurgerForm addBurger={addBurger} />
-      <BurgerList burgers={burgers} />
+      <BurgerList burgers={burgers} searchInput={searchInput} />
     </div>
   );
 }
