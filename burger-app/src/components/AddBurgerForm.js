@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
+import "./App.css";
 
 function AddBurgerForm({ addBurger }) {
   const [burgerData, setBurgerData] = useState({
@@ -29,7 +30,7 @@ function AddBurgerForm({ addBurger }) {
   };
   return (
     <div>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} className="form-container">
         <h3>Add A Burger</h3>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Burger Name</Form.Label>
