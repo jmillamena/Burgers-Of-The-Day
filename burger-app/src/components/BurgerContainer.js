@@ -6,6 +6,16 @@ import BurgerList from "./BurgerList";
 function BurgerContainer({ searchInput, setSearchInput }) {
   const [burgers, setBurger] = useState([]);
 
+  const fetchBurgers = () => {
+    fetch("http://localhost:3001/burgers")
+      .then((res) => res.json())
+      .then((burgers) => setBurger(burgers));
+  };
+
+  useEffect(() => {
+    fetchBurgers();
+  }, []);
+
   const addBurger = (burger) => {
     fetch("http://localhost:3001/burgers", {
       method: "POST",
@@ -15,8 +25,11 @@ function BurgerContainer({ searchInput, setSearchInput }) {
       body: JSON.stringify(burger),
     })
       .then((res) => res.json())
-      .then((burger) => {
-        setBurger([...burgers, burger]);
+      .then((newBurger) => {
+        setBurger([...burgers, newBurger]);
+      })
+      .then(() => {
+        fetchBurgers();
       });
   };
 
@@ -30,7 +43,7 @@ function BurgerContainer({ searchInput, setSearchInput }) {
     <div>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
       <AddBurgerForm addBurger={addBurger} />
-      <BurgerList searchInput={searchInput} burgers={burgers} />
+      <BurgerList burgers={burgers} searchInput={searchInput} />
     </div>
   );
 }
