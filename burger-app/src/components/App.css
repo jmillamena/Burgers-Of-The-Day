@@ -104,9 +104,9 @@ body {
   border: 3px solid #563528;
 }
 
-.homecard-text {
+.homecard-text h4 {
   text-align: center;
-  color: #fae29c;
+  color: #563528;
 }
 
 .search-input-bar {
