@@ -145,6 +145,16 @@
       ],
       "image": "https://i.ibb.co/M7fkSpL/Screenshot-2023-09-01-at-1-43-17-PM.png",
       "price": 5.9
+    },
+    {
+      "name": "bombaburga",
+      "ingredients": [
+        "bomb, egg, beef"
+      ],
+      "image": "https://e7.pngegg.com/pngimages/375/134/png-clipart-hamburger-t-shirt-cheeseburger-veggie-burger-fast-food-burger-food-cheeseburger-thumbnail.png",
+      "price": "10",
+      "isNew": true,
+      "id": 11
     }
   ]
 }

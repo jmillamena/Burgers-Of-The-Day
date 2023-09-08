@@ -56,13 +56,13 @@ function BurgerContainer({ searchInput, setSearchInput }) {
   return (
     <div>
       <h1 className="Header">Bob's Burgers of the Day</h1>
-      <Search searchInput={searchInput} setSearchInput={setSearchInput} />
       <NavBar />
       <Switch>
         <Route exact path={"/"}>
           <Header />
         </Route>
         <Route exact path={"/Burgers"}>
+          <Search searchInput={searchInput} setSearchInput={setSearchInput} />
           <BurgerList
             burgers={burgers}
             searchInput={searchInput}
