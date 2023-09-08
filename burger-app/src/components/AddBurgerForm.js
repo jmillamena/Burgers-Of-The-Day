@@ -85,21 +85,7 @@ function AddBurgerForm({ addBurger }) {
             Add Ingredient
           </Button>
         </Form.Group>
-        {/* <Form.Group>
-          <Form.Label htmlFor="basic-url">Add Image</Form.Label>
-          <InputGroup controlId="formFile" className="mb-3">
-            <InputGroup.Text id="basic-addon3">
-              https://example.com/users/
-            </InputGroup.Text>
-            <Form.Control
-              value={burgerData.image}
-              onChange={handleChange}
-              id="basic-url"
-              aria-describedby="basic-addon3"
-              type="text"
-            />
-          </InputGroup>
-        </Form.Group> */}
+
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Add Image</Form.Label>
           <Form.Control
