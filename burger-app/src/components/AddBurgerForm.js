@@ -49,6 +49,7 @@ function AddBurgerForm({ addBurger }) {
   };
   return (
     <>
+      <br />
       <div className="burger-of-day-intro">
         <h4>Welcome to the "Bob's Burgers Burger of the Day Form! </h4>
         <p>
