@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import AddBurgerForm from "./AddBurgerForm";
 import BurgerList from "./BurgerList";
+import Header from "./Header";
+import NavBar from "./NavBar";
+import { Switch, Route } from "react-router-dom";
 
 function BurgerContainer({ searchInput, setSearchInput }) {
   const [burgers, setBurger] = useState([]);
@@ -52,13 +55,24 @@ function BurgerContainer({ searchInput, setSearchInput }) {
 
   return (
     <div>
+      <h1 className="Header">Bob's Burgers of the Day</h1>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-      <BurgerList
-        burgers={burgers}
-        searchInput={searchInput}
-        deleteBurger={handleDeleteBurger}
-      />
-      <AddBurgerForm addBurger={addBurger} />
+      <NavBar />
+      <Switch>
+        <Route exact path={"/"}>
+          <Header />
+        </Route>
+        <Route exact path={"/Burgers"}>
+          <BurgerList
+            burgers={burgers}
+            searchInput={searchInput}
+            deleteBurger={handleDeleteBurger}
+          />
+        </Route>
+        <Route exact path={"/addBurgers"}>
+          <AddBurgerForm addBurger={addBurger} />
+        </Route>
+      </Switch>
     </div>
   );
 }
