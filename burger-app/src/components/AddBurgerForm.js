@@ -50,12 +50,12 @@ function AddBurgerForm({ addBurger }) {
   return (
     <>
       <div className="burger-of-day-intro">
+        <h4>Welcome to the "Bob's Burgers Burger of the Day Form! </h4>
         <p>
-          Welcome to the "Bob's Burgers Burger of the Day Form!" Help Bob
-          Belcher create the next unforgettable burger for his quirky restaurant
-          by submitting your own Burger of the Day ideas! Share your creativity
-          with innovative burger concepts. Let's cook up some laughter and
-          delicious burger concoctions together!
+          Help Bob Belcher create the next unforgettable burger for his quirky
+          restaurant by submitting your own Burger of the Day ideas! Share your
+          creativity with innovative burger concepts. Let's cook up some
+          laughter and delicious burger concoctions together!
         </p>
       </div>
 
