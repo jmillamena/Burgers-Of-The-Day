@@ -8,11 +8,11 @@ const NavBar = () => {
           <NavLink className="button" exact to="/">
             Home
           </NavLink>
-          <NavLink className="button" exact to="/addBurgers">
-            Add Burgers
-          </NavLink>
           <NavLink className="button" exact to="/Burgers">
             Burgers
+          </NavLink>
+          <NavLink className="button" exact to="/addBurgers">
+            Add Burgers
           </NavLink>
         </div>
       </nav>
