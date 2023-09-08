@@ -161,8 +161,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   background-color: #bf8653;
-  color: #fdde65;
+
   border: #563528 4px solid;
+}
+
+.burger-of-day-intro p {
+  color: #fdde65;
   text-align: center !important;
   font-weight: bold !important;
 }
