@@ -12,7 +12,7 @@
 }
 .add-ingredient-button:focus,
 .add-ingredient-button:hover {
-  background-color: #9ba54a;
+  background-color: #fdde65;
   border: 2px solid #563528;
   color: #563528;
   font-weight: bold !important;
@@ -20,7 +20,7 @@
 
 .add-ingredient-button {
   padding: 5px;
-  background-color: #fae29c;
+  background-color: #9ba54a;
   color: #563528;
   border: 2px solid #563528;
   cursor: pointer;
@@ -40,7 +40,7 @@
 
 .submit-button {
   padding: 5px;
-  background-color: #fae29c;
+  background-color: #9ba54a;
   color: #563528;
   border: 2px solid #563528;
   cursor: pointer;
