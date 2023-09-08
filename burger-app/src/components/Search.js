@@ -15,7 +15,11 @@ function Search({ searchInput, setSearchInput }) {
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
       />
-      <Button variant="outline-secondary" id="button-addon2">
+      <Button
+        className="search-button"
+        variant="outline-secondary"
+        id="button-addon2"
+      >
         Search
       </Button>
     </InputGroup>
