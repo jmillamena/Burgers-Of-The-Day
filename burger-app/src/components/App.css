@@ -71,3 +71,7 @@ body {
   text-align: center;
   color: #fae29c;
 }
+
+.search-input-bar {
+  padding: 20px;
+}

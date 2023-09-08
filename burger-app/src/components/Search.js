@@ -6,7 +6,7 @@ import React from "react";
 
 function Search({ searchInput, setSearchInput }) {
   return (
-    <InputGroup className="mb-3">
+    <InputGroup className="mb-3 search-input-bar">
       <Form.Control
         type="text"
         placeholder="Search Burger"
