@@ -17,12 +17,13 @@ function BurgerContainer({ searchInput, setSearchInput }) {
   }, []);
 
   const addBurger = (burger) => {
+    const newBurger = { ...burger, isNew: true };
     fetch("http://localhost:3001/burgers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(burger),
+      body: JSON.stringify(newBurger),
     })
       .then((res) => res.json())
       .then((newBurger) => {
@@ -39,10 +40,24 @@ function BurgerContainer({ searchInput, setSearchInput }) {
       .then(setBurger);
   }, []);
 
+  function handleDeleteBurger(burgerId) {
+    fetch(`http://localhost:3001/burgers/${burgerId}`, {
+      method: "DELETE",
+    })
+      .then(() => fetchBurgers())
+      .catch((error) => {
+        console.error("Failed to delete");
+      });
+  }
+
   return (
     <div>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-      <BurgerList burgers={burgers} searchInput={searchInput} />
+      <BurgerList
+        burgers={burgers}
+        searchInput={searchInput}
+        deleteBurger={handleDeleteBurger}
+      />
       <AddBurgerForm addBurger={addBurger} />
     </div>
   );

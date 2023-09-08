@@ -1,7 +1,16 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-function Burgers({ date, name, image, price, ingredientsList }) {
+function Burgers({
+  date,
+  name,
+  image,
+  price,
+  ingredientsList,
+  isNew,
+  handleDeleteBurger,
+}) {
   return (
     <Card style={{ width: "20rem" }}>
       <Card.Body>
@@ -15,6 +24,10 @@ function Burgers({ date, name, image, price, ingredientsList }) {
         <Card.Title>
           <ul>{ingredientsList}</ul>
         </Card.Title>
+        {isNew && <p>New Burger!</p>}
+        <Button variant="danger" onClick={handleDeleteBurger}>
+          Delete Burger
+        </Button>
       </Card.Body>
     </Card>
   );

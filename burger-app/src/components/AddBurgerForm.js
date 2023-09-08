@@ -37,7 +37,8 @@ function AddBurgerForm({ addBurger }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addBurger(burgerData);
+    const newBurger = { ...burgerData, isNew: true };
+    addBurger(newBurger);
 
     setBurgerData({
       name: "",
