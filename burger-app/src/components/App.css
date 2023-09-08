@@ -138,3 +138,15 @@ body {
   width: auto;
   max-width: 450px;
 }
+
+.card-name {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #fdde65;
+}
+
+.ingredients-list {
+  font-weight: bold !important;
+
+  color: #fdde65;
+}
