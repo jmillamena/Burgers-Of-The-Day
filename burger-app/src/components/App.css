@@ -142,5 +142,11 @@ body {
 .card-name {
   font-weight: bold !important;
   text-align: center !important;
-  color: #563528;
+  color: #fdde65;
+}
+
+.ingredients-list {
+  font-weight: bold !important;
+
+  color: #fdde65;
 }

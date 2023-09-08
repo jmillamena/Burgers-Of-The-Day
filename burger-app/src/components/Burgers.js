@@ -40,7 +40,7 @@ function Burgers({
       </Card.Body>
       <Card.Img src={image} variant="top" className="Burger-img" />
       <Card.Body>
-        <Card.Title>
+        <Card.Title className="ingredients-list">
           <ul>{ingredientsList}</ul>
         </Card.Title>
         {isNew && (
