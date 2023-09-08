@@ -78,14 +78,14 @@ body {
 }
 .mb-3 {
   font-weight: bold;
-  color: #fae29c;
+  color: #fdde65;
   font-size: bigger;
 }
 
 .form-container h3 {
   text-align: center;
   font-weight: bold;
-  color: #fae29c;
+  color: #fdde65;
 }
 .form-container {
   border: 4px solid#563528;
