@@ -79,7 +79,7 @@ body {
 .mb-3 {
   font-weight: bold;
   color: #fae29c;
-  font-size: larger;
+  font-size: bigger;
 }
 
 .form-container h3 {
@@ -110,5 +110,13 @@ body {
 }
 
 .search-input-bar {
-  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 3px solid #563528;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #bf8653;
+  color: black;
 }
