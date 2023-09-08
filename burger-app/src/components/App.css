@@ -166,6 +166,12 @@ body {
 }
 
 .burger-of-day-intro p {
+  color: #563528;
+  text-align: center !important;
+  font-weight: bold !important;
+}
+
+.burger-of-day-intro h4 {
   color: #fdde65;
   text-align: center !important;
   font-weight: bold !important;
