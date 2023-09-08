@@ -108,6 +108,10 @@ body {
   text-align: center;
   color: #563528;
 }
+.homecard-text h3 {
+  text-align: center;
+  color: #fdde65;
+}
 
 .search-input-bar {
   max-width: 1400px;
