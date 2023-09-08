@@ -2,7 +2,7 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid #563528;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -149,4 +149,20 @@ body {
   font-weight: bold !important;
 
   color: #fdde65;
+}
+
+.burger-of-day-intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #bf8653;
+  color: #fdde65;
+  border: #563528 4px solid;
+  text-align: center !important;
+  font-weight: bold !important;
 }
