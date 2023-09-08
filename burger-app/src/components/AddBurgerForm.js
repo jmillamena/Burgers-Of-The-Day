@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
 import "./App.css";
 
 function AddBurgerForm({ addBurger }) {
@@ -86,26 +85,17 @@ function AddBurgerForm({ addBurger }) {
             Add Ingredient
           </Button>
         </Form.Group>
-        <Form.Group controlId="formFile" className="mb-3">
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Add Image</Form.Label>
           <Form.Control
-            name="image"
             value={burgerData.image}
             onChange={handleChange}
-            type="file"
+            name="image"
+            type="text"
+            placeholder="Add Image Link"
           />
         </Form.Group>
-        <Form.Label htmlFor="basic-url">Image</Form.Label>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="basic-addon3">
-            https://example.com/users/
-          </InputGroup.Text>
-          <Form.Control
-            id="basic-url"
-            aria-describedby="basic-addon3"
-            onChange={handleChange}
-          />
-        </InputGroup>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Add Price</Form.Label>
           <Form.Control
