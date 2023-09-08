@@ -7,12 +7,14 @@ function Header() {
       <Card>
         <Card.Body className="home-card">
           <Card.Text className="homecard-text">
-            <strong>
-              Welcome to Bob's Burgers Restaurant.
-              <br />
-              We are showcasing our Burgers of the Day for our Favorite
-              Customers!!!! Yes, we mean you Teddy...
-            </strong>
+            <>
+              <h3>Welcome to Bob's Burgers Restaurant!</h3>
+
+              <h4>
+                We are showcasing our Burgers of the Day for our Favorite
+                Customers!!!! Yes, we mean you Teddy...
+              </h4>
+            </>
           </Card.Text>
         </Card.Body>
         <Card.Img
