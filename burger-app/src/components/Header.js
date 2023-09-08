@@ -8,9 +8,9 @@ function Header() {
         <Card.Body className="home-card">
           <Card.Text className="homecard-text">
             <strong>
-              Welcome to Bob's Burgers Resturaunt.
+              Welcome to Bob's Burgers Restaurant.
               <br />
-              We are Showcasing our Burgers of the Day for our Favorite
+              We are showcasing our Burgers of the Day for our Favorite
               Customers!!!! Yes, we mean you Teddy...
             </strong>
           </Card.Text>
