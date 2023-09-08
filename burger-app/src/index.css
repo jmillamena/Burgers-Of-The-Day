@@ -107,7 +107,7 @@ button:focus,
 button:hover {
   outline: none;
   /* color: var(--white); */
-  background-color: var(--blue);
+  background-color: #9ba54a;
   border: 2px solid var(--primary);
 }
 
