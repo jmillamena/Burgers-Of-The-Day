@@ -107,7 +107,7 @@ button:focus,
 button:hover {
   outline: none;
   /* color: var(--white); */
-  background-color: #f375ab;
+  background-color: #de5a4b;
   border: 2px solid #563528;
   color: #563528;
   font-weight: bold !important;
