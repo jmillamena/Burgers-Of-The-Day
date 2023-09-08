@@ -21,15 +21,18 @@ function Burgers({
   return (
     <Card raised className="BurgerCards" style={{ width: "20rem" }}>
       <Card.Body>
+        <Card.Title className="card-name">{name}</Card.Title>
       </Card.Body>
       <Card.Img src={image} variant="top" className="Burger-img" />
       <Card.Body>
         <Card.Title className="ingredients-list">
           <ul>{ingredientsList}</ul>
           <Card.Footer>
-            {date}
-            <br />${price}
+            {date} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $
+            {price}
             <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {isFavorited ? (
               <button
                 onClick={toggleFavorite}
@@ -50,8 +53,7 @@ function Burgers({
           <Button
             className="delete-burger-button"
             variant="danger"
-            onClick={handleDeleteBurger}
-          >
+            onClick={handleDeleteBurger}>
             Delete Burger
           </Button>
         )}
