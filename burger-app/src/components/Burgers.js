@@ -24,10 +24,11 @@ function Burgers({
         <Card.Title>
           <ul>{ingredientsList}</ul>
         </Card.Title>
-        {isNew && <p>New Burger!</p>}
-        <Button variant="danger" onClick={handleDeleteBurger}>
-          Delete Burger
-        </Button>
+        {isNew && (
+          <Button variant="danger" onClick={handleDeleteBurger}>
+            Delete Burger
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );

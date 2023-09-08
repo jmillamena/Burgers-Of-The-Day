@@ -7,6 +7,7 @@ function BurgerList({ burgers, searchInput, deleteBurger }) {
   });
 
   const burgerCards = filteredBurgers.map((burger) => {
+    console.log("Burger isNew", burger.isNew);
     const ingredientsList =
       Array.isArray(burger.ingredients) &&
       burger.ingredients.map((ingredient, index) => (
