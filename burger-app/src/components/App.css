@@ -75,3 +75,14 @@ body {
 .search-input-bar {
   padding: 20px;
 }
+.BurgerCards {
+  background-color: #cb824a;
+  border: 3px solid brown;
+}
+
+.Burger-img {
+  height: auto;
+  max-height: 450px;
+  width: auto;
+  max-width: 450px;
+}
