@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
 import "./App.css";
 
 function AddBurgerForm({ addBurger }) {
   const [burgerData, setBurgerData] = useState({
     name: "",
-    ingredients: "",
+    ingredients: [],
     image: "",
     price: "",
   });
@@ -17,13 +16,32 @@ function AddBurgerForm({ addBurger }) {
     setBurgerData({ ...burgerData, [name]: value });
   };
 
+  const handleIngredientChange = (e, index) => {
+    const newIngredients = [...burgerData.ingredients];
+    newIngredients[index] = e.target.value;
+    setBurgerData({ ...burgerData, ingredients: newIngredients });
+  };
+
+  const handleAddIngredient = () => {
+    setBurgerData({
+      ...burgerData,
+      ingredients: [...burgerData.ingredients, ""],
+    });
+  };
+
+  const handleRemoveIngredient = (index) => {
+    const newIngredients = [...burgerData.ingredients];
+    newIngredients.splice(index, 1);
+    setBurgerData({ ...burgerData, ingredients: newIngredients });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addBurger(burgerData);
 
     setBurgerData({
       name: "",
-      ingredients: "",
+      ingredients: [],
       image: "",
       price: "",
     });
@@ -44,34 +62,40 @@ function AddBurgerForm({ addBurger }) {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Ingredients</Form.Label>
-          <Form.Control
-            name="ingredients"
-            onChange={handleChange}
-            as="textarea"
-            rows={3}
-            value={burgerData.ingredients}
-          />
+          {burgerData.ingredients.map((ingredient, index) => (
+            <div key={index} className="mb-2">
+              <Form.Control
+                name="ingredients"
+                onChange={(e) => handleIngredientChange(e, index)}
+                type="text"
+                as="textarea"
+                value={ingredient}
+                rows={1}
+              />
+              <Button
+                variant="danger"
+                type="button"
+                onClick={() => handleRemoveIngredient(index)}
+              >
+                Remove Ingredient
+              </Button>
+            </div>
+          ))}
+          <Button variant="primary" type="button" onClick={handleAddIngredient}>
+            Add Ingredient
+          </Button>
         </Form.Group>
-        <Form.Group controlId="formFile" className="mb-3">
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Add Image</Form.Label>
           <Form.Control
-            name="image"
             value={burgerData.image}
             onChange={handleChange}
-            type="file"
+            name="image"
+            type="text"
+            placeholder="Add Image Link"
           />
         </Form.Group>
-        <Form.Label htmlFor="basic-url">Image</Form.Label>
-        <InputGroup className="mb-3">
-          <InputGroup.Text id="basic-addon3">
-            https://example.com/users/
-          </InputGroup.Text>
-          <Form.Control
-            id="basic-url"
-            aria-describedby="basic-addon3"
-            onChange={handleChange}
-          />
-        </InputGroup>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Add Price</Form.Label>
           <Form.Control
