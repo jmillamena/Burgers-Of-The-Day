@@ -65,11 +65,21 @@ body {
   color: black;
   border: 2.5px solid #563528;
   cursor: pointer;
+  font-weight: bold !important;
 }
 
+.search-button:hover,
+.search-button:focus {
+  padding: 5px;
+  background-color: #de5a4b;
+  color: black;
+  border: 2.5px solid #563528;
+  cursor: pointer;
+}
 .mb-3 {
   font-weight: bold;
   color: #fae29c;
+  font-size: larger;
 }
 
 .form-container h3 {
