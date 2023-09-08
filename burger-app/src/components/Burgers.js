@@ -21,27 +21,30 @@ function Burgers({
   return (
     <Card raised className="BurgerCards" style={{ width: "20rem" }}>
       <Card.Body>
-        <Card.Header>
-          {isFavorited ? (
-            <button
-              onClick={toggleFavorite}
-              className="emoji-button favorite active"
-            >
-              ★
-            </button>
-          ) : (
-            <button onClick={toggleFavorite} className="emoji-button favorite">
-              ☆
-            </button>
-          )}
-          {date} <div></div> ${price}
-        </Card.Header>
-        <Card.Title className="card-name">{name}</Card.Title>
       </Card.Body>
       <Card.Img src={image} variant="top" className="Burger-img" />
       <Card.Body>
         <Card.Title className="ingredients-list">
           <ul>{ingredientsList}</ul>
+          <Card.Footer>
+            {date}
+            <br />${price}
+            <br />
+            {isFavorited ? (
+              <button
+                onClick={toggleFavorite}
+                className="emoji-button favorite active">
+                ★
+              </button>
+            ) : (
+              <button
+                onClick={toggleFavorite}
+                className="emoji-button favorite">
+                ☆
+              </button>
+            )}
+            <br />
+          </Card.Footer>
         </Card.Title>
         {isNew && (
           <Button
