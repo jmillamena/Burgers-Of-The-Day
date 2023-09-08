@@ -10,27 +10,49 @@
   background-color: #bf8653;
   color: black;
 }
+.add-ingredient-button:focus,
+.add-ingredient-button:hover {
+  background-color: #9ba54a;
+  border: 2px solid #563528;
+  color: #563528;
+  font-weight: bold !important;
+}
 
 .add-ingredient-button {
   padding: 5px;
   background-color: #fae29c;
-  color: brown;
-  border: 1px solid brown;
+  color: #563528;
+  border: 2px solid #563528;
   cursor: pointer;
-  margin-left: 20px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 .delete-ingredient-button {
   padding: 5px;
   cursor: pointer;
+  margin-left: auto;
+  background-color: #de5a4b;
+  font-weight: bold;
+  color: #563528;
+  margin-top: 6px;
 }
 
 .submit-button {
   padding: 5px;
   background-color: #fae29c;
-  color: brown;
-  border: 1px solid brown;
+  color: #563528;
+  border: 2px solid #563528;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:focus,
+.submit-button:hover {
+  background-color: #9ba54a;
+  border: 2px solid #563528;
+  color: #563528;
+  font-weight: bold !important;
 }
 
 body {
@@ -41,13 +63,23 @@ body {
   padding: 5px;
   background-color: #9ba54a;
   color: black;
-  border: 1px solid brown;
+  border: 2.5px solid #563528;
   cursor: pointer;
+  font-weight: bold !important;
 }
 
+.search-button:hover,
+.search-button:focus {
+  padding: 5px;
+  background-color: #de5a4b;
+  color: black;
+  border: 2.5px solid #563528;
+  cursor: pointer;
+}
 .mb-3 {
   font-weight: bold;
   color: #fae29c;
+  font-size: bigger;
 }
 
 .form-container h3 {
@@ -55,11 +87,16 @@ body {
   font-weight: bold;
   color: #fae29c;
 }
-
+.form-container {
+  border: 4px solid#563528;
+}
 .delete-burger-button {
   padding: 5px;
   cursor: pointer;
-  margin-left: 315px;
+  margin-left: auto;
+  background-color: #de5a4b;
+  font-weight: bold;
+  color: #563528;
 }
 
 .home-card {
@@ -73,5 +110,20 @@ body {
 }
 
 .search-input-bar {
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 3px solid #563528;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #bf8653;
+  color: black;
+}
+
+.Header {
+  text-align: center;
+  font-weight: bold !important;
+  color: #563528;
   padding: 20px;
 }
