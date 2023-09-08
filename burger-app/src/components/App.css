@@ -44,3 +44,7 @@ body {
   border: 1px solid brown;
   cursor: pointer;
 }
+
+.mb-3 {
+  font-weight: bold;
+}
