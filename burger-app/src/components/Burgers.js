@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import "./App.css";
 
 function Burgers({
   date,
@@ -24,7 +25,8 @@ function Burgers({
           {isFavorited ? (
             <button
               onClick={toggleFavorite}
-              className="emoji-button favorite active">
+              className="emoji-button favorite active"
+            >
               ★
             </button>
           ) : (
@@ -42,7 +44,11 @@ function Burgers({
           <ul>{ingredientsList}</ul>
         </Card.Title>
         {isNew && (
-          <Button variant="danger" onClick={handleDeleteBurger}>
+          <Button
+            className="delete-burger-button"
+            variant="danger"
+            onClick={handleDeleteBurger}
+          >
             Delete Burger
           </Button>
         )}

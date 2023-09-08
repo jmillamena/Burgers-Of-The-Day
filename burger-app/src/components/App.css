@@ -14,7 +14,7 @@
 .add-ingredient-button {
   padding: 5px;
   background-color: #fae29c;
-  color: black;
+  color: brown;
   border: 1px solid brown;
   cursor: pointer;
   margin-left: 20px;
@@ -28,7 +28,7 @@
 .submit-button {
   padding: 5px;
   background-color: #fae29c;
-  color: black;
+  color: brown;
   border: 1px solid brown;
   cursor: pointer;
 }
@@ -47,4 +47,17 @@ body {
 
 .mb-3 {
   font-weight: bold;
+  color: #fae29c;
+}
+
+.form-container h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #fae29c;
+}
+
+.delete-burger-button {
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 315px;
 }
