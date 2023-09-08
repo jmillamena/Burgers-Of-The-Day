@@ -77,7 +77,8 @@ function AddBurgerForm({ addBurger }) {
                 className="delete-ingredient-button"
                 variant="danger"
                 type="button"
-                onClick={() => handleRemoveIngredient(index)}>
+                onClick={() => handleRemoveIngredient(index)}
+              >
                 Remove Ingredient
               </Button>
             </div>
@@ -108,7 +109,7 @@ function AddBurgerForm({ addBurger }) {
             value={burgerData.price}
             name="price"
             type="text"
-            placeholder="price of burger"
+            placeholder="Price of Burger"
             onChange={handleChange}
           />
         </Form.Group>
