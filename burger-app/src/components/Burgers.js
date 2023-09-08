@@ -21,12 +21,10 @@ function Burgers({
   return (
     <Card raised className="BurgerCards" style={{ width: "20rem" }}>
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Header></Card.Header>
       </Card.Body>
       <Card.Img src={image} variant="top" className="Burger-img" />
       <Card.Body>
-        <Card.Title>
+        <Card.Title className="ingredients-list">
           <ul>{ingredientsList}</ul>
           <Card.Footer>
             {date}
@@ -52,7 +50,8 @@ function Burgers({
           <Button
             className="delete-burger-button"
             variant="danger"
-            onClick={handleDeleteBurger}>
+            onClick={handleDeleteBurger}
+          >
             Delete Burger
           </Button>
         )}

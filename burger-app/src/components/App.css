@@ -128,8 +128,8 @@ body {
   padding: 20px;
 }
 .BurgerCards {
-  background-color: #cb824a;
-  border: 3px solid brown;
+  background-color: #bf8653;
+  border: 3px solid #563528;
 }
 
 .Burger-img {
@@ -137,4 +137,16 @@ body {
   max-height: 450px;
   width: auto;
   max-width: 450px;
+}
+
+.card-name {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #fdde65;
+}
+
+.ingredients-list {
+  font-weight: bold !important;
+
+  color: #fdde65;
 }
