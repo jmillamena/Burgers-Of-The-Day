@@ -22,6 +22,7 @@ body {
 .emoji-button {
   padding: 0.8rem;
   cursor: pointer;
+  left: px;
 }
 
 code {
