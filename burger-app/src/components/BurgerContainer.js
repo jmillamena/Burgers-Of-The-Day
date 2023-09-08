@@ -5,7 +5,7 @@ import BurgerList from "./BurgerList";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import { Switch, Route } from "react-router-dom";
-
+import "./App.css";
 function BurgerContainer({ searchInput, setSearchInput }) {
   const [burgers, setBurger] = useState([]);
 
