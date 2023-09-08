@@ -36,3 +36,11 @@
 body {
   background-color: #fae29c;
 }
+
+.search-button {
+  padding: 5px;
+  background-color: #fae29c;
+  color: black;
+  border: 1px solid brown;
+  cursor: pointer;
+}
