@@ -61,6 +61,9 @@ function BurgerContainer({ searchInput, setSearchInput }) {
         <Route exact path={"/"}>
           <Header />
         </Route>
+        <Route exact path={"/addBurgers"}>
+          <AddBurgerForm addBurger={addBurger} />
+        </Route>
         <Route exact path={"/Burgers"}>
           <Search searchInput={searchInput} setSearchInput={setSearchInput} />
           <BurgerList
@@ -68,9 +71,6 @@ function BurgerContainer({ searchInput, setSearchInput }) {
             searchInput={searchInput}
             deleteBurger={handleDeleteBurger}
           />
-        </Route>
-        <Route exact path={"/addBurgers"}>
-          <AddBurgerForm addBurger={addBurger} />
         </Route>
       </Switch>
     </div>
