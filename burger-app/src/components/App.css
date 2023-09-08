@@ -61,3 +61,17 @@ body {
   cursor: pointer;
   margin-left: 315px;
 }
+
+.home-card {
+  background-color: #bf8653;
+  border: 3px solid #563528;
+}
+
+.homecard-text {
+  text-align: center;
+  color: #fae29c;
+}
+
+.search-input-bar {
+  padding: 20px;
+}
