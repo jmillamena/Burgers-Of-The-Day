@@ -74,6 +74,7 @@ function AddBurgerForm({ addBurger }) {
                 rows={1}
               />
               <Button
+                className="delete-ingredient-button"
                 variant="danger"
                 type="button"
                 onClick={() => handleRemoveIngredient(index)}>
@@ -81,7 +82,12 @@ function AddBurgerForm({ addBurger }) {
               </Button>
             </div>
           ))}
-          <Button variant="primary" type="button" onClick={handleAddIngredient}>
+          <Button
+            className="add-ingredient-button"
+            variant="primary"
+            type="button"
+            onClick={handleAddIngredient}
+          >
             Add Ingredient
           </Button>
         </Form.Group>
@@ -106,7 +112,7 @@ function AddBurgerForm({ addBurger }) {
             onChange={handleChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button className="submit-button" variant="primary" type="submit">
           Add Burger
         </Button>
       </Form>
