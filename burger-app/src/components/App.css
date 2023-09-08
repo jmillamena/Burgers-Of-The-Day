@@ -111,6 +111,7 @@ body {
 .homecard-text h3 {
   text-align: center;
   color: #fdde65;
+  font-weight: bold;
 }
 
 .search-input-bar {
