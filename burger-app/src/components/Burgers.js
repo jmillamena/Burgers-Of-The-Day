@@ -19,14 +19,13 @@ function Burgers({
   };
 
   return (
-    <Card style={{ width: "20rem" }}>
+    <Card raised className="BurgerCards" style={{ width: "20rem" }}>
       <Card.Body>
         <Card.Header>
           {isFavorited ? (
             <button
               onClick={toggleFavorite}
-              className="emoji-button favorite active"
-            >
+              className="emoji-button favorite active">
               ★
             </button>
           ) : (
@@ -38,7 +37,7 @@ function Burgers({
         </Card.Header>
         <Card.Title>{name}</Card.Title>
       </Card.Body>
-      <Card.Img src={image} variant="top" />
+      <Card.Img src={image} variant="top" className="Burger-img" />
       <Card.Body>
         <Card.Title>
           <ul>{ingredientsList}</ul>
@@ -47,8 +46,7 @@ function Burgers({
           <Button
             className="delete-burger-button"
             variant="danger"
-            onClick={handleDeleteBurger}
-          >
+            onClick={handleDeleteBurger}>
             Delete Burger
           </Button>
         )}
