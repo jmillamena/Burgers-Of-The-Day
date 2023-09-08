@@ -7,4 +7,27 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #bf8653;
+  color: brown;
+}
+
+.add-ingredient-button {
+  padding: 5px;
+  background-color: #fae29c;
+  color: brown;
+  border: 1px solid brown;
+  cursor: pointer;
+}
+
+.delete-ingredient-button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 5px;
+  background-color: #fae29c;
+  color: brown;
+  border: 1px solid brown;
+  cursor: pointer;
 }
