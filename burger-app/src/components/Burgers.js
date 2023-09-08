@@ -25,7 +25,8 @@ function Burgers({
           {isFavorited ? (
             <button
               onClick={toggleFavorite}
-              className="emoji-button favorite active">
+              className="emoji-button favorite active"
+            >
               ★
             </button>
           ) : (
@@ -35,7 +36,7 @@ function Burgers({
           )}
           {date} <div></div> ${price}
         </Card.Header>
-        <Card.Title>{name}</Card.Title>
+        <Card.Title className="card-name">{name}</Card.Title>
       </Card.Body>
       <Card.Img src={image} variant="top" className="Burger-img" />
       <Card.Body>
@@ -46,7 +47,8 @@ function Burgers({
           <Button
             className="delete-burger-button"
             variant="danger"
-            onClick={handleDeleteBurger}>
+            onClick={handleDeleteBurger}
+          >
             Delete Burger
           </Button>
         )}

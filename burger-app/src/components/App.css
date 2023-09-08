@@ -138,3 +138,9 @@ body {
   width: auto;
   max-width: 450px;
 }
+
+.card-name {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #563528;
+}
