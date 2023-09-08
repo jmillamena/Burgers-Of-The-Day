@@ -1,16 +1,17 @@
 import Card from "react-bootstrap/Card";
+import "./App.css";
 
 function Header() {
   return (
     <>
       <Card>
-        <Card.Body>
-          <Card.Text>
+        <Card.Body className="home-card">
+          <Card.Text className="homecard-text">
             <strong>
-              Welcome to bobs burgers Resturaunt.
+              Welcome to Bob's Burgers Resturaunt.
               <br />
               We are Showcasing our Burgers of the Day for our Favorite
-              Customers!!!! yes, we mean you Teddy...
+              Customers!!!! Yes, we mean you Teddy...
             </strong>
           </Card.Text>
         </Card.Body>
