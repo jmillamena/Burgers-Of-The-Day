@@ -7,7 +7,6 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
   return (
     <div>
-      <h1 className="Header">Bob's Burgers of the Day</h1>
       <BurgerContainer
         searchInput={searchInput}
         setSearchInput={setSearchInput}

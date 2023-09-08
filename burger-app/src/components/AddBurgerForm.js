@@ -76,8 +76,7 @@ function AddBurgerForm({ addBurger }) {
               <Button
                 variant="danger"
                 type="button"
-                onClick={() => handleRemoveIngredient(index)}
-              >
+                onClick={() => handleRemoveIngredient(index)}>
                 Remove Ingredient
               </Button>
             </div>
